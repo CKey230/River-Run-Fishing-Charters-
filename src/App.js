@@ -1,25 +1,30 @@
-import { BrowserRouter as Router } from 'react-router-dom'
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
 import React from 'react'
-import RRFC2 from '../src/images/RRFC2.jpg'
+
+//components
 import Slideshow from './components/Slideshow';
 
 
+//CSS
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
 
 function App() {
   return (
     <Router>
+
+      
+        <Navbar style={{ backgroundColor: '#FFFFFF' }} expand ="lg">
+          <Navbar.Brand href="/">
+            <img id='brand' alt="logo" src='../logo1.png' />
+          </Navbar.Brand>
+
+        </Navbar>
+        
+      
       <div className="App">
-        <header className="App-header">
-          <img src={RRFC2} className="App-logo" alt="logo" />
-          <div className="contact-info">
-          <h1>Capt. Kaleb Frink </h1>
-          <h2>USCG licensed</h2>
-          <h3>Oak Island, NC</h3>
-          <h3>Phone: 716-640-1896</h3>
-          <h3>Email: Riverrunfishingcharters@gmail.com</h3>
-          </div>
-        </header>
         <div className="Slideshow">
           <Slideshow />
         </div>

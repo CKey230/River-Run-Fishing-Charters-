@@ -3,42 +3,26 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 30vmin;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  left: 0; 
-  
-}
 
-.App-header {
-  background-color: white;
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  color: black;
-}
-
-.contact-info {
-  position: absolute;
-  top: 0;
-  right: 0;
+nav {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+  color: #888;
+  display: block;
+  margin: 8px 22px 8px 22px;
+  overflow: hidden;
+  width: 100%; 
   margin: 0;
-  padding: 10px;
-  font-size: 16px;
-  line-height: 0.4;
-  text-align: right;
+  padding: 0;
 }
 
 .slick-dots {
   display: flex !important;
   flex-direction: column !important;
   position: absolute;
-  top: 50%;
+  top: 35%;
   right: 25px;
   transform: translateY(-50%);
 }
@@ -83,11 +67,7 @@
 
 /* Mobile styles */
 @media only screen and (max-width: 600px) {
-  .App-header {
-    min-height: 100vh;
-    font-size: 14px;
-  }
-  
+ 
   .contact-info {
     position: static;
     text-align: center;
