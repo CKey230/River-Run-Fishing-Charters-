@@ -20,6 +20,13 @@ function App() {
           <Navbar.Brand href="/">
             <img id='brand' alt="logo" src='../logo1.png' />
           </Navbar.Brand>
+          <Nav className='Nav'>
+            <Nav.Link href='/Rates'>Rates</Nav.Link>
+            <Nav.Link href='/About'>About</Nav.Link>
+            <Nav.Link href='/Contact'>Contact</Nav.Link>
+            <Nav.Link href='/Terms'>Terms and Conditions</Nav.Link>
+            
+          </Nav>
 
         </Navbar>
         
