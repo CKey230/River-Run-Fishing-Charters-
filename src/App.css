@@ -15,6 +15,32 @@
   padding-top: 100px;
 }
 
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 5px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.slick-prev {
+  left: 10px;
+  background-repeat: no-repeat;
+  transform: scale(1.8);
+}
+
+.slick-next {
+  right: 35px;
+  background-repeat: no-repeat;
+  transform: scale(1.8);
+}
+
 .slick-dots {
   display: flex !important;
   flex-direction: column !important;

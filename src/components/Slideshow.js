@@ -10,7 +10,6 @@ import IMG_0714 from '../images/IMG_0714.jpg';
 import IMG_0715 from '../images/IMG_0715.jpg';
 import IMG_0717 from '../images/IMG_0717.jpg';
 import IMG_0719 from '../images/IMG_0719.jpg';
-import IMG_0720 from '../images/IMG_0720.jpg';
 import IMG_0722 from '../images/IMG_0722.jpg';
 import IMG_0725 from '../images/IMG_0725.jpg';
 import IMG_0728 from '../images/IMG_0728.jpg';
@@ -26,7 +25,6 @@ const images = [
   IMG_0715,
   IMG_0717,
   IMG_0719,
-  IMG_0720,
   IMG_0722,
   IMG_0725,
   IMG_0728,
@@ -42,6 +40,8 @@ const Slideshow = () => {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
+      prevArrow: <button className="slick-prev"></button>,
+      nextArrow: <button className="slick-next"></button>,
     };
     return (
       <div className="slideshow-container">
