@@ -5,7 +5,8 @@ import "../index.css"
 function Weather() {
     const [data, setData] = useState({});
 
-    const url = 'https://api.openweathermap.org/data/2.5/weather?q=Oak Island,NC,USA&units=imperial&appid={token};
+    const url = 'https://api.openweathermap.org/data/2.5/weather?q=Oak Island,NC,USA&units=imperial&appid=708b58502325a3174d8b7c91fcc3ecc4';
+
     useEffect(() => {
         axios.get(url).then((response) => {
             setData(response.data);
